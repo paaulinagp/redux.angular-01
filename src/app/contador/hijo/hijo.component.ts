@@ -30,4 +30,9 @@ export class HijoComponent implements OnInit {
     this.cambioContador.emit(this.contador);
   }
 
+  resetHijo(contador: number) {
+    this.contador = contador;
+    this.cambioContador.emit(this.contador);
+  }
+
 }
