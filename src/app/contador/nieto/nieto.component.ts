@@ -19,6 +19,7 @@ export class NietoComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this._store.select('contador').subscribe(contador=> this.contador = contador );
   }
   
   reset(): void {
