@@ -29,10 +29,4 @@ export class HijoComponent implements OnInit {
   division() {
     this._store.dispatch(actions.dividir({numero: 2}));
   }
-
-  resetHijo(contador: number) {
-    // this.contador = contador;
-    // this.cambioContador.emit(this.contador);
-  }
-
 }
